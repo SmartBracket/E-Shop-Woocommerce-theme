@@ -1,0 +1,11 @@
+.footer {
+  padding: 30px 0;
+  background-color: var(--light-green-color);
+  font-family: var(--scada-font);
+}
+
+.footer__copy {
+  margin-top: 15px;
+  font-size: 16px;
+  font-family: var(--scada-font);
+}

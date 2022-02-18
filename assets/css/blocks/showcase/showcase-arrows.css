@@ -1,0 +1,10 @@
+.showcase-arrows__arrow {
+  left: -29px;
+  border: 1px solid rgba(171, 171, 171, 1);
+  border: 3px 0 0 3px;
+}
+.showcase-arrows__arrow_right {
+  right: -29px;
+  border: 1px solid rgba(171, 171, 171, 1);
+  border: 0 3px 3px 0;
+}

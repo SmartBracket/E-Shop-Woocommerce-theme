@@ -1,0 +1,13 @@
+.hero {
+  height: 520px;
+  font-family: var(--roboto-font);
+}
+.big-baner {
+  grid-column: 1/4;
+  border-radius: 5px;
+}
+.big-baner__item {
+  border-radius: 5px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}

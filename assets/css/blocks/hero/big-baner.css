@@ -1,0 +1,39 @@
+.big-baner {
+  height: 305px;
+  overflow: hidden;
+  position: relative;
+}
+.big-baner__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+.big-baner__item {
+  height: 100%;
+  min-width: 100%;
+}
+
+.big-baner__arrow,
+.big-baner__arrow_right {
+  background-color: var(--white-color);
+  border-radius: 15px;
+}
+
+.big-baner__arrow {
+  left: 10px;
+}
+.big-baner__arrow_right {
+  right: 10px;
+}

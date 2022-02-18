@@ -1,0 +1,21 @@
+.mail {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 15px;
+}
+.mail__img {
+  width: 25px;
+  height: 25px;
+  max-width: 100%;
+  margin-right: 7px;
+}
+.mail__link {
+  text-decoration: none;
+  color: var(--black-color);
+  height: 1rem;
+}

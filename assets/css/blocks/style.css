@@ -1,0 +1,49 @@
+/* all pages */
+@import url(defaults/defaults.css);
+@import url(defaults/normalize.css);
+
+@import url(logo/logo.css);
+@import url(tel/tel.css);
+@import url(soc/soc.css);
+@import url(arrow/arrow.css);
+@import url(button/button.css);
+@import url(card/card.css);
+@import url(showcase/showcase.css);
+@import url(showcase/showcase-arrows.css);
+@import url(mail/mail.css);
+@import url(geo/geo.css);
+@import url(container/container.css);
+
+/* header */
+@import url(header/header.css);
+@import url(header/header-navbar.css);
+@import url(header/header-catalog.css);
+
+/* main */
+@import url(main/main.css);
+
+/* footer */
+@import url(footer/footer.css);
+@import url(footer/footer-nav.css);
+@import url(footer/footer-grid.css);
+/* /all pages */
+
+/* hero */
+@import url(hero/hero.css);
+@import url(hero/hero-grid.css);
+@import url(hero/big-baner.css);
+@import url(hero/hero-card.css);
+/* news-sale */
+@import url(news/news.css);
+@import url(info-panel/info-panel.css);
+
+/* product-page */
+@import url(product/product.css);
+@import url(breadcrumb/breadcrumb.css);
+@import url(info-panel/info-panel.css);
+
+/* account */
+@import url(acc/acc.css);
+
+/* basket */
+@import url(header/basket.css);

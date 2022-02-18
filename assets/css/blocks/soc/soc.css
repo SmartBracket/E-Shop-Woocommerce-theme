@@ -1,0 +1,37 @@
+.soc {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.soc__text {
+  display: inline-block;
+  margin: 0;
+}
+.soc__list {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 25px;
+}
+.soc__link {
+  color: var(--black-color);
+  text-decoration: none;
+  display: block;
+  line-height: 0;
+}
+.soc__item {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+}
+.soc__item:first-child {
+  margin-left: 6px;
+}
+.soc__img {
+  max-height: 100%;
+}

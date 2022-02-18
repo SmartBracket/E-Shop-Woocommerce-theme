@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+  padding: 3px 0;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--white-color);
+}
+
+.button_green {
+  background-color: rgba(66, 128, 116, 1);
+  -webkit-box-shadow: 0px 4px 4px rgba(66, 127, 116, 0.76);
+  box-shadow: 0px 4px 4px rgba(66, 127, 116, 0.76);
+}
+.button_purple {
+  background-color: rgba(95, 94, 155, 1);
+  -webkit-box-shadow: 0px 4px 4px rgba(95, 94, 155, 0.78);
+  box-shadow: 0px 4px 4px rgba(95, 94, 155, 0.78);
+}
+.button_green:hover {
+  background-color: rgb(60, 109, 99);
+}
+.button_purple:hover {
+  background-color: rgb(75, 74, 124);
+}

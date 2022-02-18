@@ -1,0 +1,25 @@
+.tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 15px;
+}
+.tel__img {
+  width: 25px;
+  height: 25px;
+  max-width: 100%;
+  margin-right: 7px;
+}
+.tel__number {
+  text-decoration: none;
+  color: var(--black-color);
+  height: 1rem;
+}
+.tel__request {
+  display: inline-block;
+  margin: 0 0 0 11px;
+  font-weight: bold;
+}

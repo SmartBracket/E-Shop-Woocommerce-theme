@@ -1,0 +1,103 @@
+.acc{
+   padding: 30px 0;
+   background-color: var(--light-green-color);
+   border-radius: 5px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: center;
+           font-family: var(--roboto-font);
+}
+.acc__block{
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   -webkit-box-align:center;
+       -ms-flex-align:center;
+           align-items:center;
+           -webkit-box-flex: 1;
+               -ms-flex: 1 0 auto;
+                   flex: 1 0 auto;
+}
+.acc__or{
+   width: 40px;
+   height: 40px;
+   font-size: 18px;
+   font-weight: bold;
+   -ms-flex-item-align: center;
+       align-self: center;
+       border: 1px solid black;
+       background-color:var(--white-color);
+       border-radius:20px;
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-align:center;
+           -ms-flex-align:center;
+               align-items:center;
+       -webkit-box-pack: center;
+           -ms-flex-pack: center;
+               justify-content: center;
+               cursor:default;
+}
+
+.acc__title {
+   margin: 0;
+   margin-bottom: 10px;
+}
+.acc__required{
+   color:red;
+}
+.acc__form{
+   width: 250px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   -webkit-box-align:center;
+       -ms-flex-align:center;
+           align-items:center;
+}
+
+.acc__input{
+   width: 100%;
+   margin-bottom: 15px;
+   border:none;
+   border-radius:5px;
+   padding: 10px;
+}
+.acc__input:focus{
+   outline: 1px solid orange;
+}
+.acc__label{
+   margin-bottom: 5px;
+}
+.acc__remember{
+   margin-bottom: 5px;
+}
+.acc__forgot-pas{
+  color:blueviolet;
+}
+.acc__but{
+   width: 100%;
+   background-color:rgb(164, 184, 184);
+   ;
+   padding: 5px 0;
+   margin-bottom: 5px;
+}
+.acc__but:hover{
+   background-color:rgb(125, 148, 148);
+}
+.acc__info{
+   margin-top: 5px;
+   font-size: 14px;
+}

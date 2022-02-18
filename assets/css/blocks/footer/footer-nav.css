@@ -1,0 +1,17 @@
+.footer-nav__title {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: var(--scada-font);
+}
+.footer-nav__list {
+  padding: 0;
+  margin: 12px 0 0 0;
+}
+.footer-nav__item {
+  margin-top: 12px;
+  list-style: none;
+}
+.footer-nav__link {
+  text-decoration: none;
+  color: var(--black-color);
+}

@@ -1,0 +1,7 @@
+.footer-grid {
+  display: grid;
+  grid-template-columns: 150px 250px 250px 250px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}

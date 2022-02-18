@@ -1,0 +1,48 @@
+.basket__link {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   font-size: 15px;
+   text-decoration: none;
+   color: var(--black-color);
+}
+.basket__img {
+   width: 42px;
+   height: 42px;
+}
+
+.basket__wrap {
+   position: relative;
+   margin-right: 7px;
+}
+
+.basket__count {
+   height: 18px;
+   width: 18px;
+   border:2px solid green;
+   color:var(--black-color);
+   font-weight: bold;
+   text-align: center;
+   font-size: 15px;
+   background-color: var(--white-color);
+   border-radius: 10.5px;
+   position: absolute;
+   bottom:10px;
+   left: calc(50% - 9px);
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align:center;
+       -ms-flex-align:center;
+           align-items:center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+}
+
+.basket__text{
+   color:var(--black-color);
+}

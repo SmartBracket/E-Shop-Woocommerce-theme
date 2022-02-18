@@ -1,0 +1,10 @@
+.woocommerce-Price-amount {
+   font-family: var(--roboto-font);
+   }
+ins {
+   text-decoration: none ;
+}
+del .woocommerce-Price-amount{
+   text-decoration: line-through;
+   font-size: 0.8em;
+}
