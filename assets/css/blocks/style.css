@@ -47,3 +47,11 @@
 
 /* basket */
 @import url(header/basket.css);
+
+/* error */
+@import url(error/error.css);
+
+/* review */
+@import url(review/review.css);
+/* comments */
+@import url(comments/comments.css);

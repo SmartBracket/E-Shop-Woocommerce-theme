@@ -1,4 +1,11 @@
-.breadcrumb {
+.breadcrumb a,
+.breadcrumb__current {
   color: rgba(79, 78, 78, 1);
   font-size: 14px;
+  text-decoration: none;
+  font-family: var(--comforta-font);
+}
+
+.breadcrumb a:hover{
+  color: rgb(0, 0, 0);
 }

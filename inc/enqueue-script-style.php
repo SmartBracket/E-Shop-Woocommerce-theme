@@ -22,7 +22,10 @@ function e_store_scripts() {
 				wp_enqueue_script( 'e-store-main-show-product', get_template_directory_uri() . '/assets/js/card-show-details.js', array(), _S_VERSION, true );
 		wp_enqueue_script( 'e-store-main-hero-slider', get_template_directory_uri() . '/assets/js/big-baner.js', array(), _S_VERSION, true );
 	}
-	wp_enqueue_script( 'e-store-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'e-store-info-panel', get_template_directory_uri() . '/assets/js/info-panel.js', array(), _S_VERSION, true );
+		wp_enqueue_script( 'e-store-navigation', get_template_directory_uri() . '/assets/js/productAddToBasket.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'e-store-add-to-cart', get_template_directory_uri() . '/assets/js/navigation.js', array(), _S_VERSION, true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

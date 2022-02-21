@@ -1,7 +1,5 @@
 // height for sticky
 let infoHeight = document.querySelector('.main__section').offsetHeight
-let infoWrap = document.querySelector('.product__info-block-wrapper')
-infoWrap.style = 'height:' + infoHeight + "px"
 
 // info panel click
 let infoPanel = document.querySelector('.info-panel')

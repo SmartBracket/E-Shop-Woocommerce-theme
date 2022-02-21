@@ -1,5 +1,5 @@
 let addButs = document.querySelectorAll('.product__add-to-basket-circle')
-let addInput = document.querySelector('.product__add-to-basket-input')
+let addInput = document.querySelector('.input-text')
 
 addButs.forEach((but)=>{
    but.addEventListener('click',()=>{

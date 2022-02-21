@@ -25,7 +25,7 @@
       <div class="container">
         <div class="header-grid">
           <div class="header__logo logo">
-            <a href="#" class="logo__link"
+            <a href="<?php echo get_home_url( );?>" class="logo__link"
               ><img
                 class="logo__img"
                 src="<?php echo get_template_directory_uri(); ?>/assets/imgs/interface/logo.svg"

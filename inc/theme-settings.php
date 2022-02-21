@@ -98,12 +98,13 @@ add_action( 'after_setup_theme', 'e_store_content_width', 0 );
  *
  * @return void
  */
+
 function e_store_woocommerce_setup() {
 	add_theme_support(
 		'woocommerce',
 		array(
 			'thumbnail_image_width' => 150,
-			'single_image_width'    => 300,
+			'single_image_width'    => 150,
 			'product_grid'          => array(
 				'default_rows'    => 3,
 				'min_rows'        => 1,

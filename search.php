@@ -10,18 +10,16 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<div class="container">
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title">
+				<h1 class="page-title" style="font-family:var(--comforta-font);margin-top:0;">
 					<?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'e-store' ), '<span>' . get_search_query() . '</span>' );
+					printf( esc_html__( 'Результаты по запросу: %s', 'e-store' ), '<span>' . get_search_query() . '</span>' );
 					?>
 				</h1>
-			</header><!-- .page-header -->
 
 			<?php
 			/* Start the Loop */
@@ -46,8 +44,8 @@ get_header();
 		endif;
 		?>
 
-	</main><!-- #main -->
+	</div>
 
 <?php
-get_sidebar();
+
 get_footer();

@@ -33,3 +33,26 @@
 		<?php e_store_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
+
+ <div class="showcase__card card">
+                <a href="#" class="card__link">
+                  <div class="card__img-block">
+                    <img
+                      src="media/items/urolesan.png"
+                      alt="urolesan"
+                      class="card__img"
+                    />
+                  </div>
+
+                  <p class="card__title">Уролесан 40 капсул</p>
+                  <p class="card__price">150 руб.</p>
+                </a>
+                <div class="card__ditails card__ditails_hiden">
+                  <a href="#" class="card__but button button_green">
+                    В корзину
+                  </a>
+                  <a href="#" class="card__but button button_purple">
+                    Подробнее
+                  </a>
+                </div>
+            </div>
