@@ -1,0 +1,99 @@
+.checkout{
+   border: 1px solid var(--ligt-grey-border-color);
+   border-radius: 5px;
+   background-color: var(--light-green-color);
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   padding: 15;
+}
+.woocommerce-additional-fields{
+   display: none;
+}
+#customer_details{
+   width: 50%;
+}
+#order_review{
+   width: 50%;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   -webkit-box-align:center;
+       -ms-flex-align:center;
+           align-items:center;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+}
+.checkout h3{
+   text-align: center;
+}
+.chekcout__wrapper{
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+}
+.checkout .chekcout__wrapper .form-row-first{
+   margin-right: 0;
+}
+.chekcout__wrapper .form-row{
+   margin-bottom:  10px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align:center;
+       -ms-flex-align:center;
+           align-items:center;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+}
+.woocommerce-checkout-review-order-table{
+   border:1px solid black;
+   border-collapse: collapse;
+}
+.woocommerce-checkout-review-order-table th, 
+.woocommerce-checkout-review-order-table td {
+   border: 1px solid black;
+   padding: 5px;
+}
+.woocommerce-checkout-payment{
+margin-top: 10px;
+}
+.checkout .wc_payment_methods{
+   
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   font-weight: bold;
+   text-align: center;
+}
+.woocommerce-terms-and-conditions-wrapper {
+   display: none;
+}
+.button[name='woocommerce_checkout_place_order']{
+   margin-top: 10px;
+      background-color: var(--arrow-color);
+      width: 100%;
+      padding: 10px;
+      font-size: 1.2em;
+          border-radius: 5px 5px 0 0;
+}
+.button[name='woocommerce_checkout_place_order']:hover {
+   background-color: rgb(3, 78, 66);
+}

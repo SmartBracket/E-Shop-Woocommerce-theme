@@ -1,0 +1,26 @@
+.cat-block .products{
+   display: grid;
+   grid-template-columns: repeat(4,170px);
+   grid-gap: 30px;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           -webkit-box-pack: justify;
+               justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color:brown;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+input{
+    border-radius:5px;
+    border: 2px solid var(--ligt-grey-border-color);
+}
+input:focus{
+    outline: 0;
+    border: 2px solid rgb(116, 116, 116);
+}

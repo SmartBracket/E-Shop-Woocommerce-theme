@@ -1,0 +1,11 @@
+.related-products{
+   border: 1px solid var(--ligt-grey-border-color);
+   border-left: none;
+   border-right: none;
+   padding: 10px 0;
+}
+.related-products__title{
+   margin: 0;
+   margin-bottom: 8px;
+   text-align: center;
+}

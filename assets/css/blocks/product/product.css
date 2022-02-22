@@ -145,3 +145,6 @@ form.cart{
   font-family: var(--scada-font);
   margin: 10px 0 20px 0;
 }
+.product__info-block .star-rating{
+  margin-bottom: 10px;
+}

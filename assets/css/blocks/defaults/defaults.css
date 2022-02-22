@@ -22,6 +22,7 @@
 }
 
 body {
+  	font-family: var(--roboto-font);
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;

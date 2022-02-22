@@ -30,7 +30,10 @@
               <p class="footer-nav__title">Категории</p>
               <ul class="footer-nav__list">
               <?php 
-              $product_categories = get_terms( 'product_cat' );
+              $product_categories = get_terms( [
+                'taxonomy' =>'product_cat',
+                
+              ]);
 
      foreach ( $product_categories as $product_category ) {
        echo '<li class="footer-nav__item">' . '<a class="footer-nav__link" href="' . get_term_link( $product_category ) . '">'.$product_category->name . '</a></li>';

@@ -21,15 +21,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $related_products ) : ?>
 
-	<section class="related products">
-
-		<?php
-		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'woocommerce' ) );
-
-		if ( $heading ) :
-			?>
-			<h2><?php echo esc_html( $heading ); ?></h2>
-		<?php endif; ?>
+	 <section class="main__section related-products" onmouseenter="getSectionName(this)">
+        <div class="container" >
+          <div class="showcase">
+            <h2 class="related-products__title">Может быть интересно</h2>
+            <div class="showcase__list">
 		
 		<?php woocommerce_product_loop_start(); ?>
 
@@ -46,9 +42,19 @@ if ( $related_products ) : ?>
 			<?php endforeach; ?>
 
 		<?php woocommerce_product_loop_end(); ?>
+	
+	</div>
+	</div>
+	      <?php 
+			// if($count >6): ?>
 
+      <?php 
+	// endif; ?>
+	</div>
 	</section>
+	
 	<?php
+	echo count($related_products);
 endif;
 
 wp_reset_postdata();

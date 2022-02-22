@@ -1,17 +1,5 @@
 <?php
 //  настройка хлебных крошек
-remove_action('woocommerce_before_main_content','woocommerce_breadcrumb',20);
-
-remove_action('woocommerce_before_single_product_summary','woocommerce_output_content_wrapper',10);
-remove_action('woocommerce_before_single_product_summary','woocommerce_show_product_images',20);
-
-remove_action('woocommerce_single_product_summary','woocommerce_template_single_add_to_cart',30);
-remove_action('woocommerce_single_product_summary','woocommerce_template_single_meta',40);
-remove_action('woocommerce_single_product_summary','woocommerce_template_single_title',5);
-remove_action('woocommerce_single_product_summary','woocommerce_template_single_price',10);
-
-remove_all_filters( 'woocommerce_after_single_product_summary');
-remove_all_filters( 'woocommerce_single_product_summary');
 
 add_action('woocommerce_before_single_product_summary','woocommerce_output_content_wrapper',10);
 function woocommerce_output_content_wrapper(){
@@ -73,7 +61,7 @@ function right_block(){
   
    ?>
 
-         <div class="product__info-block">
+<div class="product__info-block">
 
    <?woocommerce_breadcrumb(); ?>
    <?woocommerce_template_single_title(); ?>
@@ -81,53 +69,43 @@ function right_block(){
   <div class="product__price"><?woocommerce_template_single_price(); ?></div>
    <?woocommerce_template_single_rating(); ?>
    <div class="product__excerpt"> <? the_excerpt(); ?></div>
-  
-  <div class="product__info-panel info-panel">
-      <div class="info-panel__names-block">
-                    <div
-                      class="info-panel__names-item info-panel__names-item_active"
-                    >
-                      <span class="info-panel__names-item-title">Cостав</span>
+  <? if(get_field('состав') || get_field('рекомендации_по_применению') || get_field('противопоказания') || get_field('способ_применения_и_дозы')): ?>
 
-                      <div class="info-panel__names-item-content-hiden">
-                        <? echo get_field('состав'); ?>
-                      </div>
-                    </div>
-                    <? if(get_field('рекомендации_по_применению')):?>
-                    <div class="info-panel__names-item">
-                      <span class="info-panel__names-item-title"
-                        >Рекомендации</span
-                      >
-                      <div class="info-panel__names-item-content-hiden">
-                        <? echo get_field('рекомендации_по_применению'); ?>
-                      </div>
-                    </div>
-                    <? endif;?>
-                    <? if(get_field('противопоказания')):?>
-                    <div class="info-panel__names-item">
-                      <span class="info-panel__names-item-title"
-                        >Противопоказания</span
-                      >
-                      <div class="info-panel__names-item-content-hiden">
-                        <? echo get_field('противопоказания'); ?>
-                      </div>
-                    </div>
-                    <? endif;?>
-                    <? if(get_field('способ_применения_и_дозы')):?>
-                    <div class="info-panel__names-item">
-                      <span class="info-panel__names-item-title"
-                        >Способ применения и дозы</span
-                      >
-                      <div class="info-panel__names-item-content-hiden">
-                        <? echo get_field('способ_применения_и_дозы'); ?>
-                      </div>
-                    </div>
-                    <? endif;?>
+
+<? $conts = carbon_get_post_meta( get_the_ID(), 'info-box' );
+    if($conts){
+      $first=true;
+      ?>
+  <div class="product__info-panel info-panel">
+    
+      <div class="info-panel__names-block">
+
+
+               <?   foreach( $conts as $key=>$cont ){
+                    if( ! $cont[ 'info-title' ] ) {
+                      continue;
+                    }
+                    if($first){
+                      $first=false;
+                       ?><div class="info-panel__names-item info-panel__names-item_active"><?
+                    }else{
+                        ?><div class="info-panel__names-item"><?
+                    }
+                ?>
+                <span class="info-panel__names-item-title"><?echo $cont['info-title'];?></span>
+                <div class="info-panel__names-item-content-hiden"><?echo $cont['info-content'];?></div>
+                 </div>
+              <?
+                  }
+                }
+                ?>            
       </div>
       <div class="info-panel__content-block"></div>         
-</div>
+  </div>
+  <? endif; ?>
    <?woocommerce_output_related_products(); ?>
 </div>
+
    <?
 }
 
@@ -173,6 +151,7 @@ function mytheme_comment($comment, $args, $depth){
   <?php }
 
 
+// звёзды
 add_filter( 'comment_author', 'comm_rating_display_rating');
 function comm_rating_display_rating( $comment_text ){
 if ( $rating = get_comment_meta( get_comment_ID(), 'rating', true ) ) {
@@ -183,6 +162,19 @@ $comment_text = $comment_text . $stars ;
 return $comment_text;
 } else {return $comment_text;}
 }
+add_filter('woocommerce_product_get_rating_html', 'your_get_rating_html', 10, 2);
+  function your_get_rating_html($rating_html, $rating) {
+    if ( $rating > 0 ) {
+      $title = sprintf( __( 'Оценка %s из 5', 'woocommerce' ), $rating );
+    } else {
+      $title = 'Еще не оценено';
+      $rating = 0;
+    }
+    $rating_html  = '<div class="star-rating" title="' . $title . '">';
+    $rating_html .= '<span style="width:' . ( ( $rating / 5 ) * 100 ) . '%"><strong class="rating">' . $rating . '</strong> ' . __( 'из 5', 'woocommerce' ) . '</span>';
+    $rating_html .= '</div>';
+    return $rating_html;
+  }
 
 // звёзды в форму
 add_action( 'comment_form_logged_in_after', 'ci_comment_rating_rating_field' );

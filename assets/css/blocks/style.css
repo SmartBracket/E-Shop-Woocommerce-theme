@@ -55,3 +55,16 @@
 @import url(review/review.css);
 /* comments */
 @import url(comments/comments.css);
+
+/* sidebar-cat */
+@import url(sidebar-cat/sidebar-cat.css);
+/* related-products */
+@import url(related-products/related-products.css);
+/* cart */
+@import url(cart/cart.css);
+/* checkout */
+@import url(checkout/checkout.css);
+/* order */
+@import url(order/order.css);
+/* account */
+@import url(my-account/my-account.css);

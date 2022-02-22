@@ -40,9 +40,10 @@
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.showcase__card {
+
+.showcase__card{
   margin-right: 20px;
 }
-.showcase__card:last-child {
-  margin-right: 0;
+.card-container:last-child .showcase__card {
+  margin-right: 0px;
 }

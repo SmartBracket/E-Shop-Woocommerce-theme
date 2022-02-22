@@ -1,0 +1,124 @@
+.woocommerce-MyAccount-navigation{
+      border: 1px solid var(--ligt-grey-border-color);
+      border-radius: 5px 5px 0 0;
+      background-color: var(--light-green-color);
+
+}
+.woocommerce-MyAccount-navigation p:last-of-type{
+   display: none;
+}
+.my-account__list{
+   margin: 0;
+   padding: 0;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-around;
+   -webkit-box-align:center;
+       -ms-flex-align:center;
+           align-items:center;
+}
+.my-account__item{
+   list-style: none;
+   padding: 10px;
+}
+.my-account__link{
+   text-decoration: none;
+   color:black;
+   font-weight: bold;
+}
+.my-account__link:hover {
+   text-decoration: none;
+   color: rgb(68, 68, 68);
+}
+
+.woocommerce-MyAccount-content{
+   border:1px solid var(--ligt-grey-border-color);
+   border-top:none;
+   border-radius: 0 0 5px 5px;
+   padding: 10px;
+}
+/* orders */
+.woocommerce-MyAccount-orders {
+   border: 1px solid black;
+   border-collapse: collapse;
+    width: 100%;
+}
+
+.woocommerce-MyAccount-orders th,
+.woocommerce-MyAccount-orders td {
+   border: 1px solid black;
+   padding: 5px;
+}
+.woocommerce-orders-table__cell .woocommerce-button{
+    background-color: var(--arrow-color);
+    padding: 5px;    
+     width: 100%;
+}
+.woocommerce-Address address{
+   font-style: normal;
+}
+.woocommerce-customer-details address p {
+   margin-top: 10px;
+}
+.woocommerce-form-row{
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+       -ms-flex-direction:column;
+           flex-direction:column;
+           -webkit-box-align:center;
+               -ms-flex-align:center;
+                   align-items:center;
+                   margin-bottom: 10px;
+}
+.woocommerce-EditAccountForm{
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+           -webkit-box-align:center;
+               -ms-flex-align:center;
+                   align-items:center;
+}
+input[name='account_display_name']+span{
+   display: none;
+}
+button[name='save_account_details']{
+   margin-top: 15px;
+   padding: 15px 0;
+   width: 100%;
+   background-color: var(--arrow-color);
+}
+.woocommerce-EditAccountForm p:last-of-type{
+   width: 300px;
+}
+
+.woocommerce-EditAccountForm fieldset{
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+}
+
+.woocommerce-EditAccountForm fieldset p>label{
+   margin-bottom: 5px;
+}
+
+.woocommerce-MyAccount-content p:first-of-type{
+   text-align: center;
+   margin-bottom: 5px;
+}

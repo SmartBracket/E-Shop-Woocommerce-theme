@@ -629,3 +629,23 @@ del .woocommerce-Price-amount {
 .single_add_to_cart_button:hover {
 	background-color: rgb(3, 78, 66);
 }
+
+.orderby{
+	border-radius:5px;
+	margin: 10px 0;
+}
+
+.woocommerce-products-header__title{
+	margin: 0;
+}
+.woocommerce-NoticeGroup-checkout{
+	position: absolute;
+	width: 100%;
+	top: -35px;
+}
+.woocommerce-info{
+	padding: 10px;
+	text-align: center;
+	font-size: 1.2em;
+	border-radius:5px;
+}

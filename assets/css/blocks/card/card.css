@@ -1,7 +1,10 @@
+.card-container{
+  position: relative;
+  display: inline-block;
+}
 .card {
   width: 170px;
   height: 240px;
-  display: inline-block;
   position: relative;
   border: 1px solid rgba(171, 171, 171, 1);
   border-radius: 5px;
@@ -37,6 +40,7 @@
 
 .card__title {
   font-size: 14px;
+  padding: 0 3px;
   text-align: center;
 }
 .card__price {
@@ -96,3 +100,27 @@
   width: 130px;
   margin-top: 0;
 }
+
+.card__sticker_new{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  background: url(../../../imgs/interface/stickers/news-sticker.png);
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+.card__sticker_sale{
+  position: absolute;
+ top:0px;
+ left: 0px;
+  background: url(../../../imgs/interface/stickers/sale-sticker.png);
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+.card__sticker_new+.card__sticker_sale{
+  margin-top: 40px;
+}
+
+

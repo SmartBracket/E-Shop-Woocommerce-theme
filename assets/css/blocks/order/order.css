@@ -1,0 +1,79 @@
+.woocommerce-order{
+         border: 1px solid var(--ligt-grey-border-color);
+         border-radius: 5px;
+}
+.woocommerce-order .woocommerce-thankyou-order-received {
+       border-bottom: 1px solid var(--ligt-grey-border-color);
+       background-color: var(--light-green-color);
+       padding: 10px 0;
+       font-weight: bold;
+       display: block;
+       text-align: center;
+}
+.woocommerce-thankyou-order-details{
+   padding: 0;
+   margin: 10px;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+}
+.woocommerce-thankyou-order-details li{
+   margin: 5px 0;
+   list-style: none;
+}
+
+.woocommerce-order > p {
+   display: none;
+}
+
+.woocommerce-order-details{
+  border-top: 1px solid var(--ligt-grey-border-color);
+  border-bottom: 1px solid var(--ligt-grey-border-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.woocommerce-table--order-details {
+   border: 1px solid black;
+   border-collapse: collapse;
+   margin-bottom: 20px;
+}
+
+.woocommerce-table--order-details th,
+.woocommerce-table--order-details td {
+   border: 1px solid black;
+   padding: 5px;
+}
+
+.woocommerce-customer-details{
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+
+     margin-bottom: 20px;
+}
+.woocommerce-customer-details address{
+     font-style: normal;
+     text-align: center;
+}

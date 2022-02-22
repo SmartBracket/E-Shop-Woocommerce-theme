@@ -3,6 +3,11 @@
 // подключить редактирование цены
 require get_template_directory() . '/woocommerce/inc/wc-price-settings.php';
 require get_template_directory() . '/woocommerce/inc/wc-product-settings.php';
+require get_template_directory() . '/woocommerce/inc/wc-archive-settings.php';
+require get_template_directory() . '/woocommerce/inc/wc-cart-settings.php';
+require get_template_directory() . '/woocommerce/inc/wc-checkout-settings.php';
+require get_template_directory() . '/woocommerce/inc/wc-my-ac-settings.php';
+
 add_filter('woocommerce_currency_symbol', 'change_existing_currency_symbol', 10, 2);
 
 function change_existing_currency_symbol( $currency_symbol, $currency ) {

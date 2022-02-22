@@ -11,6 +11,45 @@ if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );
 }
+	use Carbon_Fields\Container;
+	use Carbon_Fields\Field;
+
+add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
+
+function crb_attach_theme_options() {
+
+	Container::make( 'post_meta', 'Настройки страницы' )
+			->where( 'post_id', '=', '82' )
+			->add_fields( array(
+	
+				Field::make( 'complex', 'hero_slider', 'Слайдер' )
+				->add_fields( array(
+					Field::make( 'image', 'photo', 'Изображение слайда' ),
+				) ),
+	
+		) );
+	Container::make( 'post_meta', 'Информация о товаре' )
+			->where( 'post_type', '=', 'product' )
+			->add_fields( array(
+	
+				
+				Field::make('complex', 'info-box', 'Блок с информацией')
+				->add_fields( array(
+					Field::make('text', 'info-title', 'Заголовок'),
+					Field::make('text', 'info-content', 'Информация'),
+				) ),
+				
+				) );
+	
+	}
+
+add_action( 'after_setup_theme', 'crb_load' );
+function crb_load() {
+    require_once( get_template_directory() . '/inc/carbon-fields/vendor/autoload.php' );
+    \Carbon_Fields\Carbon_Fields::boot();
+}
+
+
 // Подключение настроек темы
 require get_template_directory() . '/inc/theme-settings.php';
 // Подключение виджетов
@@ -67,3 +106,9 @@ function style_menu_items( $items){
 	}
 	return $items;
 }
+
+// оплата
+require_once(get_template_directory() . '/woocommerce/includes/class-wc-payment-gateways.php');
+require_once(get_template_directory() . '/woocommerce/includes/gateways/vikup/class-wc-gateway-vikup.php');
+
+
